@@ -1,0 +1,166 @@
+:root {
+    --backgorund: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    --primary: #000;
+    --secondary: #fff;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    font-family: Helvetica;
+    color: #ffff;
+    
+}
+
+h2 {
+
+    text-align: center;
+    font-family: Helvetica;
+}
+
+label {
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+legend{
+    text-indent: 30px;
+}
+p {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type="text"] {
+    border: 2px solid #ffff;
+    border-bottom: solid 1px;
+    padding-left: 5px;
+
+
+}
+
+hr {
+    width: 90%;
+}
+
+ h3{
+    margin-left: 50px;
+}
+
+form {
+
+    background-color: var(--secondary);
+    color: var(--primary);
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    padding-top: .1px;
+    text-align: left;
+    max-width: 100%;
+    
+
+}
+
+input[type="submit"] {
+    margin-left: 40%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid var(--primary);
+    outline: none;
+    width: 120px;
+    padding: 4px;
+    cursor: pointer;
+    background: transparent;
+    color: #000;
+}
+
+input[type="radio"]:not(:before) {
+    
+    background-color: #fff;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+    
+    background-color: #000;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+}
+
+textarea {
+    width: 350px;
+}
+
+nav > ul{
+    display: flex;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--secondary);
+    padding: 0;
+    text-align: center;
+   
+
+   
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    color: #fff ;
+    background-color: #000;
+    padding: 5px;
+    
+}
+
+a:link{
+    text-decoration: none;
+
+}
+
+nav > ul >li{
+    
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20pt;
+    letter-spacing: 3px;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav > ul {
+        display: block;
+        margin: 10px 0;
+        padding: 5px 0;
+        
+      }
+
+      form{
+          width: 450px;
+          margin-bottom: 5px;
+      }
+
+      textarea{
+          width: 250px;
+      }
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
+        
+</head>
+
+<body>
+    <div class="container">
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Application</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="apparel.html">Apparel</a></li>
+                <li><a href="Programs.html">Programs</a></li>
+            </ul>
+        </nav>
+       
+        <form action="/cgi-bin/form.py" method="get" onsubmit="return(validate());">
+            <h2 class="heading">About You</h2>
+            <h3>Please fill out the form below</h3>
+
+            <label>First Name: <input type="text" name="first_name" id="fname"></label>
+
+            <label>Last Name: <input type="text" name="last_name" id="lname"></label>
+            
+            <label> Height: <input type="text" name="height"> </label>
+            
+             <label> Weight: <input type="text" name="weight"> </label>
+             
+             <label>Email: <input type="email" name="email" id="email"></label>
+                                                                      
+                                                                                                   
+           <hr>
+                <legend>Best way to communicate:</legend>
+                <ul>
+                    <li><input type="checkbox" name="facebook">Facebook</li>
+                    <li><input type="checkbox" name="twitter">Twitter</li>
+                    <li><input type="checkbox" name="email">Email</li>
+                    <li><input type="checkbox" name="text">Text Message</li>
+                    
+                    
+                </ul>
+            
+            <hr>
+                <legend>Type of Lifestyle:</legend>
+                <ul>
+                    <li><input type="radio" name="lifestyle" value="sedantary">Sedantary</li>
+                    <li><input type="radio" name="lifestyle"  value="moderate">Moderate</li>
+                    <li><input type="radio" name="lifestyle"  value="active">Active</li>
+                </ul>
+            
+           <hr>
+
+            <p>
+                What are your your goals:
+                <br>
+                <textarea name="textcontent" id="goal"></textarea>
+
+            </p>
+
+            <input type="submit" value="Submit">
+
+
+
+        </form>
+    </div>
+    
+    <script src="form.js"></script>
+</body>
+
+</html>

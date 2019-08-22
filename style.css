@@ -1,0 +1,350 @@
+:root{
+     --backgorund: rgb(32, 32, 32);
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+    --primary: #000;
+    --secondary: #fff;
+    --box: rgba(211, 211, 211, .2);
+    --shadow: 0px 0px 71px -21px #D3D3D3;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+      background: var(--background);
+    
+}
+
+
+
+nav > ul{
+    display: flex;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--secondary);
+    padding: 0;
+    text-align: center;
+   
+
+   
+}
+
+a{
+    color: var(--primary);
+}
+
+a:hover{
+    color: var(--secondary) ;
+    background-color: var(--primary);
+    padding: 5px;
+    
+}
+
+a:link{
+    text-decoration: none;
+
+}
+
+nav > ul >li{
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20pt;
+    letter-spacing: 3px;
+    
+}
+
+.main{
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    color: var(--secondary);
+    letter-spacing: 3px;
+    
+}
+
+.main img{
+    
+    height: auto;
+    max-width: 100%;
+    border: solid var(--secondary);
+}
+
+.heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    width: 50%;
+    
+    
+    
+}
+
+.heading2{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.plans{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 30px;
+    
+    
+}
+
+.plans ul{
+    list-style: square;
+    line-height: 3em;
+    border-top: solid 7px;
+    font-weight: 600;
+    color: var(--secondary);
+    background-color: rgba(211, 211, 211, .2);
+    /*box-shadow: 0px 0px 71px -21px #D3D3D3;*/
+    
+    }
+.plans h3{
+    text-align: center;
+    letter-spacing: 3px;
+    color: var(--secondary);
+}
+
+.plans h2{
+    text-align: right;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 22pt;
+}
+
+video#bgvid{
+    
+    background: url(mel.jpg) no-repeat;
+    background-size: 100% 100%;
+    top: 50px;
+    display: block;
+    max-width: 100%;
+    margin: 0  auto;
+    width: auto;
+    height: auto;
+}
+.info{
+    display: block;
+    
+}
+
+.info-two{
+    display: block;
+}
+
+.contact{
+    width: 75%;
+    margin: auto;
+    padding: 15px 10px;
+    background-color: var(--box); 
+    border-top: solid 7px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    font-size: 11pt;
+    /*box-shadow: var(--shadow);*/
+   
+}
+
+.contact h1{
+    text-align: center;
+    color: var(--secondary);
+}
+
+.contact{
+    color: var(--secondary);
+   
+}
+
+.image {
+    object-fit: cover;
+    position: relative;
+    margin-top: 10px;
+}
+
+.image img{
+    max-width: 100%;
+    width: 700px;
+    display: block;
+    border: solid var(--secondary);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about{
+    max-width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    background-color: var(--box); 
+    border-top: solid 7px;
+    line-height: 2;
+    letter-spacing: 2.5px;
+    font-size: 11pt;
+    /*box-shadow: var(--shadow);*/
+}
+
+.about{
+    color: var(--secondary);
+}
+.about a{
+    color: var(--secondary);
+    text-decoration: underline;
+}
+.apparel{
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    color: var(--secondary);
+    
+}
+
+.apparel img{
+    max-width: 100%;
+    width: 1000px;
+    height: auto;
+    border: solid var(--secondary);
+}
+
+.clothing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary);
+    width: 50%;
+    text-align: center;
+    letter-spacing: 5px;
+    
+}
+
+.main-two{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.item{
+    
+    padding: 19px;
+    width: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+#buy{
+    background: #fff;
+    margin: auto;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid var(--primary);
+    outline: none;
+    width: 120px;
+    padding: 4px;
+    cursor: pointer;
+    color: #000;
+}
+
+#day{
+    width: 100%;
+}
+
+#day img{
+    object-fit: cover;
+}
+
+
+.card{
+    flex: 0 1 30%;
+    text-align: center;
+    background-color: #ffff;
+    font-family: Helvetica;
+    border-top: solid #fff 7px; 
+    
+}
+
+
+.price{
+    color: #000;
+    font-size: 22pt;
+}
+
+.card button{
+    border:none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav > ul {
+      display: block;
+      margin: 10px 0;
+      padding: 5px 0;
+      
+    }
+
+    .plans{
+        display: block;
+    }
+
+    .main-two{
+        display: block;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .card button{
+        margin-bottom: 5px;
+    }
+
+    .info{
+        display: block;
+    }
+
+    .contact{
+        width: 450px;
+        margin: auto;
+       
+    }
+    .about{
+      width: 400px;
+      margin:  5px auto;
+    }
+
+    .clothing{
+        font-size: 8pt;
+    }
+
+    .apparel{
+        margin: 5px;
+    }
+
+    
+  }
